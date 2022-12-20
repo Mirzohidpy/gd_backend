@@ -1,5 +1,6 @@
 from pathlib import Path
 import environ
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,6 +29,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Local apps
+    'base',
+    'main',
+    # Third party apps
+    'ckeditor',
+    'ckeditor_uploader',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -82,9 +90,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -100,7 +108,45 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = "uz"
+MODELTRANSLATION_LANGUAGES = ("uz", "ru", "en")
+MODELTRANSLATION_FALLBACK_LANGUAGES = {
+    'default': ('uz', 'ru', 'en'),
+    'uz': ('uz', 'ru', 'en'),
+    'ru': ('ru', 'uz', 'en'),
+    'en': ('en', 'ru', 'uz')
+}
+
+MODELTRANSLATION_LANGUAGES_CHOICES = (
+    ("uz", _("Uzbek")),
+    ("ru", _("Russian")),
+    ("en", _("English")),
+)
+
+LOCALE_PATHS = (
+    BASE_DIR / 'locale',
+)
+
+CORS_ALLOW_METHODS = ['*']
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
+
+LANGUAGES = (
+    ('ru', _('Russian')),
+    ('en', _('󠁧󠁢󠁥󠁮󠁧󠁿English')),
+    ('uz', _('Uzbek')),
+)
+
 try:
-    from local_settings import *
-except ImportError:
+    from config.local_settings import *
+except:
     pass
