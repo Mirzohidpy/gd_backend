@@ -3,10 +3,10 @@ from base.models import Service, Partner
 
 
 @register(Service)
-class NewsTranslationOptions(TranslationOptions):
+class ServiceTranslationOptions(TranslationOptions):
     fields = ('title', 'body')
 
 
 @register(Partner)
-class NewsTranslationOptions(TranslationOptions):
+class PartnerTranslationOptions(TranslationOptions):
     fields = ('title',)
