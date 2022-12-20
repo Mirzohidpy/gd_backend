@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'parler',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
