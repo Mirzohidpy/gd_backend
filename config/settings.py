@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'base',
     'main',
     # Third party apps
+    'modeltranslation',
     'ckeditor',
     'ckeditor_uploader',
     'parler',
