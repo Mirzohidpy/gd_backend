@@ -1,5 +1,5 @@
 from modeltranslation.translator import register, TranslationOptions
-from main.models import Portfolio, Service, Blog, Category, JobType, TeamMember
+from main.models import Portfolio, Blog, Category, JobType, TeamMember
 
 
 @register(Portfolio)
@@ -24,4 +24,4 @@ class JobTypeTranslationOptions(TranslationOptions):
 
 @register(TeamMember)
 class TeamMemberTranslationOptions(TranslationOptions):
-    fields = ('full_name',)
+    fields = ('full_name', 'job_type')

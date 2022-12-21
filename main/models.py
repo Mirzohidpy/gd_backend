@@ -36,7 +36,7 @@ class Category(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(_('Sarlavha'), max_length=250)
-    body = models.TextField(_('Sarlavha'))
+    body = models.TextField(_('Kontent'))
     image = models.ImageField(_('Rasm'), upload_to='blog')
     category = models.ForeignKey(Category, verbose_name=_('Kategoriya'), on_delete=models.CASCADE)
     created_at = models.DateTimeField(_('Yaratilgan vaqti'), auto_now_add=True)

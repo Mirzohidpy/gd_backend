@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 class Service(models.Model):
     image = models.ImageField(upload_to='service', verbose_name=_('Rasm'))
     title = models.CharField(max_length=250, verbose_name=_('Sarlavha'))
-    body = models.CharField(max_length=250, verbose_name=_('Kontent'))
+    body = models.TextField(max_length=250, verbose_name=_('Kontent'))
 
     def __str__(self):
         return self.title

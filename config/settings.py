@@ -23,6 +23,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -154,3 +155,6 @@ try:
     from config.local_settings import *
 except:
     pass
+
+# CKEDITOR_UPLOAD_PATH = 'ck-uploads/'
+# CKEDITOR_ALLOW_NONIMAGE_FILES = False
