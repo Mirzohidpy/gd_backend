@@ -9,7 +9,7 @@ class PortfolioTranslationOptions(TranslationOptions):
 
 @register(Blog)
 class BlogTranslationOptions(TranslationOptions):
-    fields = ('title', 'body', 'category')
+    fields = ('title', 'body',)
 
 
 @register(Category)
@@ -24,4 +24,4 @@ class JobTypeTranslationOptions(TranslationOptions):
 
 @register(TeamMember)
 class TeamMemberTranslationOptions(TranslationOptions):
-    fields = ('name', 'position', 'description', 'full_name')
+    fields = ('full_name', 'job_type')
