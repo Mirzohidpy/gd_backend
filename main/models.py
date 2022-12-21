@@ -1,6 +1,7 @@
 from django.db import models
 from base.models import Service
 from ckeditor_uploader.fields import RichTextUploadingField
+
 from django.utils.translation import gettext_lazy as _
 
 
