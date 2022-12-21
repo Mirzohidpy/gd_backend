@@ -6,21 +6,21 @@ from .serializers import ServiceSerializer, PartnerSerializer
 # Create your views here.
 
 
-class ServiceListView(generics.ListCreateAPIView):
+class ServiceListView(generics.ListAPIView):
     queryset = Service.objects.all()
     serializer_class = ServiceSerializer
 
 
-class ServiceDetailView(generics.RetrieveUpdateDestroyAPIView):
+class ServiceDetailView(generics.RetrieveAPIView):
     queryset = Service.objects.all()
     serializer_class = ServiceSerializer
 
 
-class PartnerListView(generics.ListCreateAPIView):
+class PartnerListView(generics.ListAPIView):
     queryset = Partner.objects.all()
     serializer_class = PartnerSerializer
 
 
-class PartnerDetailView(generics.RetrieveUpdateDestroyAPIView):
+class PartnerDetailView(generics.RetrieveAPIView):
     queryset = Partner.objects.all()
     serializer_class = PartnerSerializer

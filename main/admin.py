@@ -7,7 +7,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 @admin.register(Portfolio)
-class ServiceAdmin(admin.ModelAdmin):
+class PortfolioAdmin(admin.ModelAdmin):
     list_display = ('service',
                     'image',
                     'title',
@@ -19,12 +19,19 @@ class ServiceAdmin(admin.ModelAdmin):
             _("Main"),
             {
                 "fields": (
-                    "title",
                     "service",
-                    "description",
                     "image",
                     "order",
                     "on_top",
+                )
+            },
+        ),
+        (
+            _("Content Uz"),
+            {
+                "fields": (
+                    "title_uz",
+                    "description_uz",
                 )
             },
         ),
@@ -55,11 +62,19 @@ class ServiceAdmin(admin.ModelAdmin):
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('title',)
     fieldsets = (
+        # (
+        #     _("Main"),
+        #     {
+        #         "fields": (
+        #             "title",
+        #         )
+        #     },
+        # ),
         (
-            _("Main"),
+            _("Content Uz"),
             {
                 "fields": (
-                    "title",
+                    "title_uz",
                 )
             },
         ),
@@ -95,11 +110,18 @@ class BlogAdmin(admin.ModelAdmin):
             _("Main"),
             {
                 "fields": (
-                    'title',
-                    'body',
                     'image',
                     'category',
                     'views_count',
+                )
+            },
+        ),
+        (
+            _("Content Uz"),
+            {
+                "fields": (
+                    "title_uz",
+                    "body_uz",
                 )
             },
         ),
@@ -132,8 +154,15 @@ class JobTypeAdmin(admin.ModelAdmin):
             _("Main"),
             {
                 "fields": (
-                    "title",
                     'icon',
+                )
+            },
+        ),
+        (
+            _("Content Uz"),
+            {
+                "fields": (
+                    "title_uz",
                 )
             },
         ),
@@ -164,14 +193,21 @@ class TeamMemberAdmin(admin.ModelAdmin):
             _("Main"),
             {
                 "fields": (
-                    "full_name",
                     "image",
-                    "job_type",
                     "instagram",
                     "facebook",
                     "twitter",
                     "linkedin",
                     "telegram",
+                )
+            },
+        ),
+        (
+            _("Content Uz"),
+            {
+                "fields": (
+                    "full_name_uz",
+                    "job_type_uz",
                 )
             },
         ),

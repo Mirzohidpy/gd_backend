@@ -23,12 +23,17 @@ class JobTypeSerializer(serializers.ModelSerializer):
 class TeamMemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = TeamMember
-        fields = ['id', 'full_name', 'position', 'image', 'description']
+        fields = ['id', 'full_name',
+                  'image',
+                  'job_type',
+                  'linkedin',
+                  'facebook',
+                  'instagram',
+                  'twitter',
+                  'telegram', ]
 
 
 class BlogSerializer(serializers.ModelSerializer):
     class Meta:
         model = Blog
         fields = ['id', 'image', 'title', 'body']
-
-

@@ -15,12 +15,19 @@ class ServiceAdmin(admin.ModelAdmin):
             {
                 "fields": (
                     "image",
-                    "title",
-                    "body",
                 )
             },
         ),
         (
+            _("Content Uz"),
+            {
+                "fields": (
+                    "title_uz",
+                    "body_uz"
+                )
+            },
+        ),
+            (
             _("Content Ru"),
             {
                 "fields": (
@@ -49,8 +56,15 @@ class PartnerAdmin(admin.ModelAdmin):
             _("Main"),
             {
                 "fields": (
-                    "title",
                     "logo",
+                )
+            },
+        ),
+        (
+            _("Content Uz"),
+            {
+                "fields": (
+                    "title_uz",
                 )
             },
         ),

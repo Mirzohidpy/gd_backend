@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'base',
     'main',
     # Third party apps
+    'rest_framework_swagger',
+    'drf_yasg',
     'modeltranslation',
     'ckeditor',
     'ckeditor_uploader',
