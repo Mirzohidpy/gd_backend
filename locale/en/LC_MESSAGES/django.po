@@ -19,141 +19,141 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 #: base/models.py:9 main/models.py:12 main/models.py:40 main/models.py:67
 msgid "Rasm"
-msgstr ""
+msgstr "Picture"
 
 #: base/models.py:10 base/models.py:23 main/models.py:13 main/models.py:27
 #: main/models.py:38 main/models.py:39 main/models.py:54
 msgid "Sarlavha"
-msgstr ""
+msgstr "Title"
 
 #: base/models.py:11
 msgid "Kontent"
-msgstr ""
+msgstr "Content"
 
 #: base/models.py:17
 msgid "Xizmat"
-msgstr ""
+msgstr "Service"
 
 #: base/models.py:18
 msgid "Xizmatlar"
-msgstr ""
+msgstr "Services"
 
 #: base/models.py:22
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: base/models.py:26
 msgid "Hamkor"
-msgstr ""
+msgstr "Partner"
 
 #: base/models.py:27
 msgid "Hamkorlar"
-msgstr ""
+msgstr "Partners"
 
 #: config/settings.py:133 config/settings.py:150
 msgid "Uzbek"
-msgstr ""
+msgstr "Uzbek"
 
 #: config/settings.py:134 config/settings.py:148
 msgid "Russian"
-msgstr ""
+msgstr "Russian"
 
 #: config/settings.py:135
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: config/settings.py:149
 msgid "󠁧󠁢󠁥󠁮󠁧󠁿English"
-msgstr ""
+msgstr "English"
 
 #: main/models.py:11
 msgid "Servis"
-msgstr ""
+msgstr "Service"
 
 #: main/models.py:14
 msgid "Haqida"
-msgstr ""
+msgstr "About"
 
 #: main/models.py:15
 msgid "Tartibi"
-msgstr ""
+msgstr "Order"
 
 #: main/models.py:16
 msgid "Tepadami?"
-msgstr ""
+msgstr "At the top?"
 
 #: main/models.py:19
 msgid "Loyiha"
-msgstr ""
+msgstr "Project"
 
 #: main/models.py:20
 msgid "Loyihalar"
-msgstr ""
+msgstr "Projects"
 
 #: main/models.py:30 main/models.py:41
 msgid "Kategoriya"
-msgstr ""
+msgstr "Category"
 
 #: main/models.py:31
 msgid "Kategoriyalar"
-msgstr ""
+msgstr "Categories"
 
 #: main/models.py:42
 msgid "Yaratilgan vaqti"
-msgstr ""
+msgstr "Time of creation"
 
 #: main/models.py:43
 msgid "Ko'rilganlar soni"
-msgstr ""
+msgstr "Number of views"
 
 #: main/models.py:46
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: main/models.py:47
 msgid "Bloglar"
-msgstr ""
+msgstr "Blogs"
 
 #: main/models.py:55
 msgid "Ikonka"
-msgstr ""
+msgstr "Icon"
 
 #: main/models.py:58 main/models.py:68
 msgid "Ish turi"
-msgstr ""
+msgstr "Type of work"
 
 #: main/models.py:59
 msgid "Ish turlari"
-msgstr ""
+msgstr "Types of work"
 
 #: main/models.py:66
 msgid "Ismi"
-msgstr ""
+msgstr "Name"
 
 #: main/models.py:69
 msgid "Linkedin"
-msgstr ""
+msgstr "Linkedin"
 
 #: main/models.py:70
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: main/models.py:71
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #: main/models.py:72
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: main/models.py:73
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: main/models.py:76
 msgid "Jamoa a'zosi"
-msgstr ""
+msgstr "Team member"
 
 #: main/models.py:77
 msgid "Jamoa a'zolari"
-msgstr ""
+msgstr "Team members"

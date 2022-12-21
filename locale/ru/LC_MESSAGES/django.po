@@ -21,141 +21,141 @@ msgstr ""
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 #: base/models.py:9 main/models.py:12 main/models.py:40 main/models.py:67
 msgid "Rasm"
-msgstr ""
+msgstr "Рисунок"
 
 #: base/models.py:10 base/models.py:23 main/models.py:13 main/models.py:27
 #: main/models.py:38 main/models.py:39 main/models.py:54
 msgid "Sarlavha"
-msgstr ""
+msgstr "Заголовок"
 
 #: base/models.py:11
 msgid "Kontent"
-msgstr ""
+msgstr "Содержание"
 
 #: base/models.py:17
 msgid "Xizmat"
-msgstr ""
+msgstr "Оказание услуг"
 
 #: base/models.py:18
 msgid "Xizmatlar"
-msgstr ""
+msgstr "Услуги"
 
 #: base/models.py:22
 msgid "Logo"
-msgstr ""
+msgstr "Логотип"
 
 #: base/models.py:26
 msgid "Hamkor"
-msgstr ""
+msgstr "Партнер"
 
 #: base/models.py:27
 msgid "Hamkorlar"
-msgstr ""
+msgstr "Партнеры"
 
 #: config/settings.py:133 config/settings.py:150
 msgid "Uzbek"
-msgstr ""
+msgstr "узбекский"
 
 #: config/settings.py:134 config/settings.py:148
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: config/settings.py:135
 msgid "English"
-msgstr ""
+msgstr "Английский"
 
 #: config/settings.py:149
 msgid "󠁧󠁢󠁥󠁮󠁧󠁿English"
-msgstr ""
+msgstr "Английский"
 
 #: main/models.py:11
 msgid "Servis"
-msgstr ""
+msgstr "Оказание услуг"
 
 #: main/models.py:14
 msgid "Haqida"
-msgstr ""
+msgstr "О"
 
 #: main/models.py:15
 msgid "Tartibi"
-msgstr ""
+msgstr "Заказ"
 
 #: main/models.py:16
 msgid "Tepadami?"
-msgstr ""
+msgstr "Наверху?"
 
 #: main/models.py:19
 msgid "Loyiha"
-msgstr ""
+msgstr "Проект"
 
 #: main/models.py:20
 msgid "Loyihalar"
-msgstr ""
+msgstr "Проекты"
 
 #: main/models.py:30 main/models.py:41
 msgid "Kategoriya"
-msgstr ""
+msgstr "Категория"
 
 #: main/models.py:31
 msgid "Kategoriyalar"
-msgstr ""
+msgstr "Категории"
 
 #: main/models.py:42
 msgid "Yaratilgan vaqti"
-msgstr ""
+msgstr "Время создания"
 
 #: main/models.py:43
 msgid "Ko'rilganlar soni"
-msgstr ""
+msgstr "Количество просмотров"
 
 #: main/models.py:46
 msgid "Blog"
-msgstr ""
+msgstr "Блог"
 
 #: main/models.py:47
 msgid "Bloglar"
-msgstr ""
+msgstr "Блоги"
 
 #: main/models.py:55
 msgid "Ikonka"
-msgstr ""
+msgstr "Икона"
 
 #: main/models.py:58 main/models.py:68
 msgid "Ish turi"
-msgstr ""
+msgstr "Тип работы"
 
 #: main/models.py:59
 msgid "Ish turlari"
-msgstr ""
+msgstr "Виды работ"
 
 #: main/models.py:66
 msgid "Ismi"
-msgstr ""
+msgstr "Имя"
 
 #: main/models.py:69
 msgid "Linkedin"
-msgstr ""
+msgstr "Линкедин"
 
 #: main/models.py:70
 msgid "Facebook"
-msgstr ""
+msgstr "Фейсбук"
 
 #: main/models.py:71
 msgid "Instagram"
-msgstr ""
+msgstr "Инстаграм"
 
 #: main/models.py:72
 msgid "Twitter"
-msgstr ""
+msgstr "Твиттер"
 
 #: main/models.py:73
 msgid "Telegram"
-msgstr ""
+msgstr "Телеграмма"
 
 #: main/models.py:76
 msgid "Jamoa a'zosi"
-msgstr ""
+msgstr "Участник команды"
 
 #: main/models.py:77
 msgid "Jamoa a'zolari"
-msgstr ""
+msgstr "Члены команды"

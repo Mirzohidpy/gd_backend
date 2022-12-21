@@ -7,9 +7,6 @@ class PortfolioTranslationOptions(TranslationOptions):
     fields = ('title', 'description')
 
 
-
-
-
 @register(Blog)
 class BlogTranslationOptions(TranslationOptions):
     fields = ('title', 'body',)
