@@ -3,9 +3,10 @@ from .models import Portfolio, Category, JobType, TeamMember, Blog
 
 
 class PortfolioSerializer(serializers.ModelSerializer):
+    service = serializers.StringRelatedField()
     class Meta:
         model = Portfolio
-        fields = ['id', 'image', 'title', 'description', 'order', 'on_top']
+        fields = ['id', 'image', 'title', 'description', 'order', 'on_top', 'service']
 
 
 class CategorySerializer(serializers.ModelSerializer):

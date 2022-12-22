@@ -3,6 +3,7 @@ from rest_framework import status, generics
 from .models import Portfolio, Category, JobType, TeamMember, Blog
 from .serializers import PortfolioSerializer, CategorySerializer, JobTypeSerializer, TeamMemberSerializer, \
     BlogSerializer
+from django_filters.rest_framework import DjangoFilterBackend
 
 
 # Create your views here.
@@ -11,7 +12,8 @@ from .serializers import PortfolioSerializer, CategorySerializer, JobTypeSeriali
 class PortfolioListView(generics.ListAPIView):
     queryset = Portfolio.objects.all()
     serializer_class = PortfolioSerializer
-
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = {'service': ['exact'], 'on_top': ['exact']}
 
 class PortfolioDetailView(generics.RetrieveAPIView):
     queryset = Portfolio.objects.all()

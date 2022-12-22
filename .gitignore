@@ -102,7 +102,7 @@ celerybeat-schedule.*
 .venv
 env/
 venv/
-files/
+media/
 ENV/
 env.bak/
 venv.bak/
