@@ -45,7 +45,7 @@ class TeamMemberListView(generics.ListAPIView):
     queryset = TeamMember.objects.all()
     serializer_class = TeamMemberSerializer
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = {'service': ['exact'], 'on_top': ['exact']}
+    filterset_fields = {'job_type': ['exact']}
 
 
 class TeamMemberDetailView(generics.RetrieveAPIView):
@@ -56,6 +56,8 @@ class TeamMemberDetailView(generics.RetrieveAPIView):
 class BlogListView(generics.ListAPIView):
     queryset = Blog.objects.all()
     serializer_class = BlogSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = {'category': ['exact']}
 
 
 class BlogDetailView(generics.RetrieveAPIView):
