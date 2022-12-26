@@ -102,7 +102,7 @@ celerybeat-schedule.*
 .venv
 env/
 venv/
-files/
+media/
 ENV/
 env.bak/
 venv.bak/
@@ -137,3 +137,4 @@ GitHub.sublime-settings
 !.vscode/launch.json
 !.vscode/extensions.json
 .history
+.DS_Store
