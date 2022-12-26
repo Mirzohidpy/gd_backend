@@ -15,6 +15,7 @@ class PortfolioListView(generics.ListAPIView):
     filter_backends = [DjangoFilterBackend]
     filterset_fields = {'service': ['exact'], 'on_top': ['exact']}
 
+
 class PortfolioDetailView(generics.RetrieveAPIView):
     queryset = Portfolio.objects.all()
     serializer_class = PortfolioSerializer
@@ -43,6 +44,8 @@ class JobTypeDetailView(generics.RetrieveAPIView):
 class TeamMemberListView(generics.ListAPIView):
     queryset = TeamMember.objects.all()
     serializer_class = TeamMemberSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = {'service': ['exact'], 'on_top': ['exact']}
 
 
 class TeamMemberDetailView(generics.RetrieveAPIView):

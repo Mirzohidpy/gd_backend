@@ -15,5 +15,4 @@ urlpatterns = [
     path('jobtype/<int:pk>/', JobTypeDetailView.as_view()),
     path('team-member/', TeamMemberListView.as_view()),
     path('team-member/<int:pk>/', TeamMemberDetailView.as_view()),
-
 ]
